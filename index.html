@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<title>HIT &amp; BREAK</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<canvas id="c"></canvas>
+<div id="hud">
+  <div class="st"><small>COINS</small><b id="coins">0</b></div>
+  <div class="mid"><div id="oname"></div><div id="pips"></div></div>
+  <div class="st r"><small>POWER</small><b id="pow">0</b></div>
+  <button id="menuBtn" aria-label="Menu">☰</button>
+</div>
+<div id="hint"></div>
+<div id="mis"></div>
+<div id="ev"></div>
+<button id="smash">SMASH!</button>
+<button id="wBtn">🌍<small>WORLDS</small></button>
+<div id="bar">
+  <div id="ups"><button class="btn" id="wp"></button>
+  <button class="btn up" data-i="0"></button><button class="btn up" data-i="1"></button>
+  <button class="btn up" data-i="2"></button><button class="btn up" data-i="3"></button></div>
+</div>
+<div id="menu">
+  <div><h1>HIT &amp; BREAK</h1><p>BREAK EVERYTHING.</p></div>
+  <div class="mb"><button id="play">PLAY</button>
+    <div class="row"><button id="sndB" class="sm"></button><button id="musB" class="sm"></button><button id="rstB" class="sm">RESET SAVE</button></div>
+    <div id="album"></div><small>Tap the object · or press Space</small></div>
+</div>
+<div id="tp" class="ov off">
+  <div class="card tools-card" role="dialog" aria-modal="true" aria-labelledby="toolsTitle">
+    <div class="tools-head">
+      <div class="tools-emblem" aria-hidden="true">⚒</div>
+      <div class="tools-heading">
+        <span class="tools-kicker">BUILD YOUR LOADOUT</span>
+        <h2 id="toolsTitle">TOOL SHED</h2>
+        <p>Pick your next favorite way to smash.</p>
+      </div>
+      <div class="tool-wallet"><span aria-hidden="true">🪙</span><b id="toolCoins">0</b><small>COINS</small></div>
+    </div>
+    <div class="tool-progress">
+      <div><span>YOUR ARSENAL</span><b id="toolOwned">1 / 12 UNLOCKED</b></div>
+      <div class="tool-progress-track"><i id="toolProgress"></i></div>
+    </div>
+    <div id="tl" aria-label="Available tools"></div>
+    <button id="tx" class="sm tools-close">BACK TO GAME <span aria-hidden="true">×</span></button>
+  </div>
+</div>
+<div id="wl" class="ov off"><div class="card"><h2>WORLDS</h2>
+<div class="wc on" data-w="0"><b>WORLD 1 · HOME</b><small>Bedroom › Kitchen › Drawing Room › Basement › Hall</small><em>PLAYING</em></div>
+<div class="wc" data-w="1"><b>WORLD 2 · CITY</b><small>Poles, bikes, cars &amp; buildings</small><em>COMING SOON</em></div>
+<div class="wc" data-w="2"><b>WORLD 3 · SPACE</b><small>Planets, meteors &amp; stars</small><em>COMING SOON</em></div>
+<button id="wx" class="sm">CLOSE</button></div></div>
+<div id="soon" class="off"><div id="sbg"></div><div class="st2"><h1 id="sh"></h1><p>COMING SOON</p><button id="sb" class="sm">BACK</button></div></div>
+<script src="game.js"></script>
+</body></html>  
